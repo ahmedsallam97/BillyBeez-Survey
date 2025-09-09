@@ -1,0 +1,117 @@
+/* Background similar to Billy Beez website */
+body {
+  background-color: #fff;
+  font-family: "Arial", sans-serif;
+}
+
+/* Logo styling - keep on the left */
+.logo {
+  max-width: 280px;
+  height: auto;
+  display: block;
+}
+
+/* Title always centered regardless of logo size */
+.page-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-weight: 700;
+  color: #000;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .logo {
+    max-width: 120px;
+  }
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Table header colors matching website */
+.table-header th,
+.table-warning th {
+  background-color: #c2243b;
+  color: #ffffff;
+}
+
+td {
+  color: #000000;
+  font-weight: 700;
+  text-align: left;
+}
+
+/* Buttons with Billy Beez theme */
+.btn-warning {
+  background-color: #ffc107;
+  border: none;
+  color: #000;
+  font-weight: 600;
+}
+.btn-warning:hover {
+  background-color: #e0a800;
+}
+
+/* Make form elements rounded */
+input,
+select,
+textarea,
+.btn {
+  border-radius: 10px !important;
+}
+
+/* Success message styling */
+#successMessage {
+  border: 2px solid #ffc107;
+  background-color: #fff3cd;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* ⭐ Stars Styling */
+.rating-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rating-label input[type="radio"] {
+  margin-bottom: 3px;
+}
+.rating-label .stars {
+  font-size: 1rem;
+}
+.rating-poor .stars {
+  color: #dc3545; /* red */
+}
+.rating-fair .stars {
+  color: #fd7e14; /* orange */
+}
+.rating-good .stars {
+  color: #ffc107; /* yellow */
+}
+.rating-vgood .stars {
+  color: #28a745; /* green */
+}
+.rating-excellent .stars {
+  color: #198754; /* dark green */
+}
+
+/* Cards styling for form sections */
+.card {
+  border-radius: 15px;
+  border: 1px solid #ddd;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+.card h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #c2243b;
+}

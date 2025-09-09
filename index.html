@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Billy Beez Customer Feedback</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container my-5">
+      <!-- Logo + Title Section -->
+      <div class="position-relative mb-4">
+        <img
+          src="img/BB Logo.png"
+          alt="Billy Beez Logo"
+          class="logo position-relative"
+        />
+        <h1 class="page-title text-center">Customer Feedback</h1>
+      </div>
+
+      <form id="feedbackForm" class="needs-validation" novalidate>
+        <!-- Number of visits Section -->
+        <div class="card">
+          <h5>Number of Visits</h5>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Number of visits per year?</label>
+            <select class="form-select" name="visits" required>
+              <option value="" selected disabled>Select...</option>
+              <option>1st Time</option>
+              <option>2 - 4</option>
+              <option>5 - 7</option>
+              <option>More</option>
+            </select>
+            <div class="invalid-feedback">Please select number of visits.</div>
+          </div>
+        </div>
+
+        <!-- Ratings Table Section -->
+        <div class="card">
+          <h5>Rate Your Experience</h5>
+          <div class="table-responsive">
+            <table class="table table-bordered text-center align-middle">
+              <thead class="table-warning">
+                <tr>
+                  <th>Question</th>
+                  <th>Poor</th>
+                  <th>Fair</th>
+                  <th>Good</th>
+                  <th>Very Good</th>
+                  <th>Excellent</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Q1 -->
+                <tr>
+                  <td>Overall, how would you rate the day?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q1"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q1" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q1" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q1" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q1" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q2 -->
+                <tr>
+                  <td>How satisfied are you with the staff's friendliness?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q2"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q2" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q2" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q2" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q2" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q3 -->
+                <tr>
+                  <td>Cleanliness of the playground?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q3"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q3" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q3" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q3" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q3" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q4 -->
+                <tr>
+                  <td>Quality of food & beverage?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q4"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q4" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q4" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q4" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q4" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q5 -->
+                <tr>
+                  <td>Variety of activities available?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q5"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q5" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q5" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q5" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q5" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q6 -->
+                <tr>
+                  <td>Safety and security in the facility?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q6"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q6" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q6" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q6" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q6" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q7 -->
+                <tr>
+                  <td>Value for money?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q7"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q7" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q7" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q7" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q7" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+                <!-- Q8 -->
+                <tr>
+                  <td>Would you recommend Billy Beez to others?</td>
+                  <td>
+                    <label class="rating-label rating-poor"
+                      ><input
+                        type="radio"
+                        name="q8"
+                        value="Poor"
+                        required
+                      /><span class="stars">⭐</span></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-fair"
+                      ><input type="radio" name="q8" value="Fair" /><span
+                        class="stars"
+                        >⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-good"
+                      ><input type="radio" name="q8" value="Good" /><span
+                        class="stars"
+                        >⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-vgood"
+                      ><input type="radio" name="q8" value="Very Good" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                  <td>
+                    <label class="rating-label rating-excellent"
+                      ><input type="radio" name="q8" value="Excellent" /><span
+                        class="stars"
+                        >⭐⭐⭐⭐⭐</span
+                      ></label
+                    >
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Suggestions Section -->
+        <div class="card">
+          <h5>Your Suggestions</h5>
+          <div class="mb-3">
+            <label class="form-label fw-bold">What to keep?</label>
+            <textarea class="form-control" name="keep" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">What to enhance?</label>
+            <textarea class="form-control" name="enhance" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-bold">Comment</label>
+            <textarea class="form-control" name="comment" rows="4"></textarea>
+          </div>
+        </div>
+
+        <!-- Customer Info Section -->
+        <div class="card">
+          <h5>Customer Information</h5>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Customer Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                name="customerName"
+                required
+              />
+              <div class="invalid-feedback">Name is required.</div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label fw-bold">Mobile Number:</label>
+              <input
+                type="tel"
+                class="form-control"
+                name="mobile"
+                pattern="[0-9]{10,15}"
+                required
+              />
+              <div class="invalid-feedback">
+                Enter a valid number (10-15 digits).
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label fw-bold">Date:</label>
+            <input type="date" class="form-control" name="date" required />
+            <div class="invalid-feedback">Please select a date.</div>
+          </div>
+        </div>
+
+        <!-- Buttons -->
+        <div class="text-center">
+          <button type="submit" class="btn btn-warning px-4">Submit</button>
+        </div>
+      </form>
+
+      <!-- Success Message -->
+      <div
+        id="successMessage"
+        class="alert alert-success mt-4 d-none text-center"
+      >
+        <h5>Thank you for your feedback!</h5>
+        <button id="downloadBtn" class="btn btn-outline-dark mt-2">
+          Download JSON
+        </button>
+        <button id="resetBtn" class="btn btn-outline-secondary mt-2">
+          Submit Another
+        </button>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
